@@ -1,0 +1,3 @@
+declare motor{
+	output power;
+}

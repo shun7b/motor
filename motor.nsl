@@ -1,0 +1,19 @@
+#include"motor.inc"
+module motor{
+	reg count[31]=31'b0;
+	reg pwm=1'b0;
+	power=pwm;
+	if(count<=17500){
+		pwm:=0b1;
+	}
+	if(count<35000&&count>17500){
+		pwm:=0b0;
+	}
+	if(count==35000){
+		count:=1;
+		
+	}else{
+		count++;
+	}
+		
+}
