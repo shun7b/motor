@@ -2,14 +2,16 @@
 module motor{
 	reg count[31]=31'b0;
 	reg pwm=1'b0;
+	
 	power=pwm;
-	if(count<=17500){
+	power2=pwm;
+	if(count<=HALF){
 		pwm:=0b1;
 	}
-	if(count<35000&&count>17500){
+	if(count<FULL&&count>HALF){
 		pwm:=0b0;
 	}
-	if(count==35000){
+	if(count==FULL){
 		count:=1;
 		
 	}else{
