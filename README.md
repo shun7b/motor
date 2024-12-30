@@ -1,5 +1,5 @@
 # motor
-De0cv,Servo Motor Kit (DC12V電源使用),FS90R
+De0cv (vcc 5v),FS90R
 GPIOでDE0cvをFS90Rとつないだ        <br>
 FPGAのクロック周波数は50Mhzで動かした。
 <br>
